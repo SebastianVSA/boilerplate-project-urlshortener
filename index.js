@@ -43,8 +43,6 @@ app.get('/api/hello', function(req, res) {
 
 
 
-
-
 //validar y guardar la URL
 app.post('/api/shorturl', (req, res) => {
   const originalUrl = req.body.url;
@@ -77,10 +75,6 @@ app.get('/api/shorturl/:short_url', (req, res) => {
     return res.json({ error: 'No short URL found' });
   }
 });
-
-
-
-
 
 
 
